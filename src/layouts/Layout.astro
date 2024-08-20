@@ -32,11 +32,6 @@ const { title } = Astro.props;
 			white 60%
 		);
 	}
-	* {
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-	}
 	html {
 		font-family: system-ui, sans-serif;
 		background-color: #0e0f11;
@@ -53,4 +48,75 @@ const { title } = Astro.props;
 			Courier New,
 			monospace;
 	}
+	* {
+ padding: 0;
+ margin: 0;
+ border: 0;
+}
+
+*,
+*:before,
+*:after {
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+:focus,
+:active {
+ outline: none;
+}
+
+a:focus,
+a:active {
+ outline: none;
+}
+
+input,
+button,
+textarea {
+ background: none;
+}
+
+input::-ms-clear {
+ display: none;
+}
+
+button {
+ cursor: pointer;
+}
+
+button[disabled] {
+ cursor: default;
+}
+
+button::-moz-focus-inner {
+ padding: 0;
+ border: 0;
+}
+
+a,
+a:visited {
+ text-decoration: none;
+}
+
+a:hover {
+ text-decoration: none;
+}
+
+ul li {
+ list-style: none;
+}
+
+img {
+ vertical-align: top;
+}
+
+select::-ms-expand {
+ display: none;
+}
+
+a {
+	color: inherit;
+}
 </style>
