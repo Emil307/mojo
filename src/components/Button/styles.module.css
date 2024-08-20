@@ -1,0 +1,50 @@
+.button {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.rectangle,
+.circle {
+  background-color: #d0ff71;
+  transition: transform 0.3s ease;
+}
+
+.rectangle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 127px;
+  height: 36px;
+  border-radius: 9999px;
+  padding-right: 4px;
+}
+
+.text {
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transform: translateX(-8px);
+}
+
+.arrow {
+  width: 12px;
+  height: 12px;
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease;
+}
+
+.button:hover .circle {
+  transform: translateX(8px);
+}
+
+.button:hover .arrow {
+  transform: rotate(0);
+}

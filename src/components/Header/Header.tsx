@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
+import { Button } from "../Button";
+import { Link } from "../Link";
 
 export const Header = () => {
   const [isMounted, setIsMounted] = useState<boolean>(false);
@@ -30,13 +32,13 @@ export const Header = () => {
       <div className={`${styles.content} ${isIsland && styles.island}`}>
         <h2>Mojo.</h2>
         <div className={styles.links}>
-          <a href="#">Services</a>
-          <a href="#">Work</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <Link href="#">Services</Link>
+          <Link href="#">Work</Link>
+          <Link href="#">About</Link>
+          <Link href="#">Contact</Link>
         </div>
         <div className={styles.button}>
-          <button className={styles.start}>Start a project</button>
+          <Button>Start a project</Button>
         </div>
       </div>
     </header>
