@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { Header } from '../components/Header';
 import { Intro } from '../components/Intro';
 import { Works } from '../components/Works';
+import { Services } from '../components/Services';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -10,5 +11,6 @@ import { Works } from '../components/Works';
 		<Header client:load />
 		<Intro />
 		<Works />
+		<Services />
 	</main>
 </Layout>

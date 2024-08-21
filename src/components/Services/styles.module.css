@@ -1,0 +1,49 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-radius: 1.5rem;
+  background-color: #1a1b1e;
+  padding: 6rem;
+}
+
+.services {
+  width: 60vw;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 0.25rem;
+  border-bottom: 1px solid rgba(54, 55, 58, 1);
+  transition: all 0.3s ease;
+}
+.image {
+  width: 8rem;
+  height: 6rem;
+  border-radius: 1rem;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: all 0.5s linear;
+}
+
+.title {
+  font-size: 5.5rem;
+  line-height: 115%;
+  transform: translateX(-8rem);
+  transition: all 0.5s linear;
+}
+
+.services:hover .service:not(:hover) {
+  opacity: 0.5;
+}
+
+.service:hover .image {
+  transform: scaleX(1);
+}
+
+.service:hover .title {
+  transform: translateX(1.5rem);
+}
