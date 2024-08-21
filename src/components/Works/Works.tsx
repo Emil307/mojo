@@ -55,6 +55,7 @@ export const Works: React.FC = () => {
     <div className={styles.works}>
       {works.map((work: any) => (
         <a className={styles.work} key={work.id}>
+          <div className={styles.tagsHider}></div>
           <div className={styles.tagsWrapper}>
             <div className={styles.top}>
               <img src={border.src} />
