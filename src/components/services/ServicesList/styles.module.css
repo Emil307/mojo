@@ -1,0 +1,43 @@
+.services {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 5.25rem;
+  border-top: 1px solid rgba(55, 55, 58, 1);
+}
+
+.title {
+  font-size: 16rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  width: 30%;
+  font-size: 2.25rem;
+  line-height: 1.15;
+}
+
+.parts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 32rem;
+}
+
+.part {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-bottom: 1px solid rgba(55, 55, 58, 1);
+  padding-bottom: 1rem;
+}

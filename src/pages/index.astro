@@ -1,16 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Header } from '../components/Header';
-import { Intro } from '../components/Intro';
-import { Works } from '../components/Works';
-import { Services } from '../components/Services';
----
-
+import { Header } from '../components/global/Header';
+import { Intro } from '../components/home/Intro';
+import { WhoAreWe } from '../components/home/WhoAreWe';
+import { Works } from '../components/home/Works';
+import { ServicesIntro } from '../components/home/ServicesIntro';
+import { RunningText } from '../components/home/RunningText';
+import { Footer } from '../components/global/Footer';
+import { Island } from '../components/global/Island';
+--- 
+ 
 <Layout title="Welcome to Astro.">
 	<main>
 		<Header client:load />
 		<Intro />
+		<WhoAreWe />
 		<Works />
-		<Services />
+		<ServicesIntro />
+		<RunningText client:load />
+		<Footer />
+		<Island />
 	</main>
 </Layout>

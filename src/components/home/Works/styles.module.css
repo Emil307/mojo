@@ -1,8 +1,10 @@
 .works {
+  margin-top: 68px;
   display: flex;
   flex-direction: column;
   gap: calc(3rem + 20px);
   align-items: center;
+  padding-bottom: 96px;
 }
 
 .work {

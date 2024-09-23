@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
-import { Button } from "../Button";
+import { Button } from "../../ui/Button";
 import { Link } from "../Link";
 
 export const Header = () => {
@@ -30,15 +30,21 @@ export const Header = () => {
   return (
     <header className={styles.section}>
       <div className={`${styles.content} ${isIsland && styles.island}`}>
-        <h2>Mojo.</h2>
+        <h2>
+          <a href="/">Mojo.</a>
+        </h2>
         <div className={styles.links}>
-          <Link href="#">Services</Link>
+          <Link href="#">
+            <a href="/services">Services</a>
+          </Link>
           <Link href="#">Work</Link>
           <Link href="#">About</Link>
           <Link href="#">Contact</Link>
         </div>
         <div className={styles.button}>
-          <Button>Start a project</Button>
+          <a href="/newproject">
+            <Button>Start a project</Button>
+          </a>
         </div>
       </div>
     </header>

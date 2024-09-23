@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
-import brand from "../../assets/images/brand-small.webp";
+import brand from "../../../assets/images/brand-small.webp";
 
 const servicesList = [
   {
@@ -25,7 +25,7 @@ const servicesList = [
   },
 ];
 
-export const Services = () => {
+export const ServicesIntro = () => {
   return (
     <div className={styles.section}>
       <div className={styles.header}></div>

@@ -1,0 +1,31 @@
+.section {
+  padding: 8rem 0 4rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.servicesText {
+  float: left;
+  padding-top: 0.5rem;
+  padding-right: 3rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  width: 50%;
+  line-height: 85%;
+}
+
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.textWrapper {
+  width: 40%;
+  margin-right: 10%;
+}
+
+.text {
+  font-size: 2.25rem;
+}

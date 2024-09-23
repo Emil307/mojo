@@ -26,14 +26,14 @@
   background-color: red;
   transform: scaleX(0);
   transform-origin: left center;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 
 .title {
   font-size: 5.5rem;
   line-height: 115%;
   transform: translateX(-8rem);
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 
 .services:hover .service:not(:hover) {

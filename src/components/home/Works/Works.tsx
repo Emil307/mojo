@@ -1,6 +1,6 @@
 import React from "react";
-import emplyflow from "../../assets/images/emplyflow.jpg";
-import border from "../../assets/icons/border.svg";
+import emplyflow from "../../../assets/images/emplyflow.jpg";
+import border from "../../../assets/icons/border.svg";
 import styles from "./styles.module.css";
 
 const works = [
