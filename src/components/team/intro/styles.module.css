@@ -1,0 +1,43 @@
+.section {
+  width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 0 4rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .section {
+    width: 40rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    width: 30rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 526px) {
+  .section {
+    width: 20rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

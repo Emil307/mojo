@@ -1,0 +1,70 @@
+.section {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0;
+}
+
+.title {
+  font-size: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.text {
+  font-size: 3rem;
+  width: 49rem;
+}
+
+.space {
+  visibility: hidden;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.teamButton {
+  height: 18.5px;
+  font-size: 1rem;
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+.arrowWrapper {
+  position: relative;
+  width: 0.75rem;
+  height: 0.75rem;
+  overflow: hidden;
+}
+
+.arrow {
+  width: 0.75rem;
+  height: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.first {
+}
+
+.second {
+  transform: translate(-18.5px, 0);
+}
+
+.teamButton:hover .first {
+  transform: translate(18.5px, -18.5px);
+}
+
+.teamButton:hover .second {
+  transform: translate(0px, -18.5px);
+}

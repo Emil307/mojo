@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Header } from '../components/global/Header';
+import { Intro } from '../components/services/intro';
+import { ServicesList } from '../components/services/ServicesList';
+import { Footer } from '../components/global/Footer';
+--- 
+ 
+<Layout title="Welcome to Astro.">
+	<main>
+		<Header client:load />
+		<Intro />
+    <ServicesList />
+		<Footer />
+	</main>
+</Layout>
