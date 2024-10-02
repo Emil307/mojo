@@ -3,6 +3,7 @@ import { Button } from "../ui/Button";
 import { Checkbox } from "../ui/Checkbox";
 import styles from "./styles.module.css";
 import arrow from "../../assets/icons/arrow.svg";
+import { Input } from "../global/Input";
 
 const startStep = 1;
 const endStep = 4;
@@ -43,17 +44,9 @@ export const NewProjectForm: React.FC = () => {
               <h3 className={styles.stepTitle}>
                 Let’s start at the very beginning
               </h3>
-              <input className={styles.input} type="text" placeholder="Name" />
-              <input
-                className={styles.input}
-                type="email"
-                placeholder="Email"
-              />
-              <input
-                className={styles.input}
-                type="text"
-                placeholder="Company"
-              />
+              <Input type="text" placeholder="Name" />
+              <Input type="email" placeholder="Email" />
+              <Input type="text" placeholder="Company" />
             </>
           )}
           {step === 2 && (
@@ -61,6 +54,16 @@ export const NewProjectForm: React.FC = () => {
               <h3 className={styles.stepTitle}>
                 Let’s talk budget & timelines
               </h3>
+              <div className={styles.launch}>
+                <p>I want to launch my project on:</p>
+                <Input type="text" placeholder="DD/MM/YYYY" />
+              </div>
+              <div className={styles.budget}>
+                <p>My budget is between</p>
+                <Input type="number" placeholder="" />
+                <p>and</p>
+                <Input type="text" placeholder="" />
+              </div>
             </>
           )}
           {step === 3 && (
